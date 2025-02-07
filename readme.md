@@ -22,7 +22,7 @@
 
 
 ### 教学视频链接
-
+https://drive.google.com/file/d/1C9X57COc0CT9tKQa2yk9pHTBVcz3h7Vk/view?usp=drive_link
 
 ### 配置python环境
 ```bash
