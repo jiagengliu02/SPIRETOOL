@@ -31,21 +31,21 @@ pip install -r requirements.txt
 
 ### (建议使用firefox浏览器)登录SPIRE选课系统并且到达购物车页面，加入你想选的课程到购物车里，此时课程的状态是Closed。
 ![](images/1.png)
-### 在你的终端运行script.py文件
-```bash
-python script.py
-```
 
 ### 按下F12，选择上方的Network窗口，勾选你的课程并且点击Enroll按钮，点击Yes
 ![](images/2.png)
 ### 此时你的Network里应该有两个POST包，选择那个更大的12kb的包
 ![](images/3.png)
-### 找到这个包的Header里，Request Header，Cookie，右键点击复制value，粘贴进终端按下回车
+### 找到这个包的Header里，Request Header，Cookie，右键点击复制value，粘贴进`run.sh`
 ![](images/4.png)
-### 同样，找到这个包的Request里ICSID，右键点击复制value，粘贴进终端按下回车
+### 同样，找到这个包的Request里ICSID，右键点击复制value，粘贴进`run.sh`
 ![](images/5.png)
-### 如果终端打印Success，说明启动成功
 
+
+### 运行`run.sh`，如果终端打印Success，说明启动成功
+```bash 
+bash run.sh
+```
 
 ## 补充
 - spire的验证方式还是非常原始的，理论上除了登录需要SMS验证非常麻烦以外，其他的手动重复操作都是可以脚本执行的
